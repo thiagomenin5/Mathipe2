@@ -1,0 +1,33 @@
+body{
+    background: #304352;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.banner {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+  }
+  
+  .banner video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+  }
+  .container {
+    margin-top: 70px; /* La altura de la barra de navegación */
+  }
+  .nosotros-img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+  }
+  .card:hover {
+    transform: rotateY(180deg);
+  }
