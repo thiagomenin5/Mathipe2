@@ -116,3 +116,37 @@ background: linear-gradient(to right, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, F
     background-size: cover;
     margin-top: 15px;
   }
+  .card-servicio {
+    transition: transform 0.5s ease;
+ }
+ 
+ .giro {
+    transform: rotateY(180deg);
+ }
+ .card-container {
+  perspective: 1000px;
+}
+
+.card-servicio {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.card-servicio .card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-servicio .card-front {
+  background-color: transparent;
+  color: #212529;
+}
+
+.card-servicio .card-back {
+  background-color: #000;
+  color: #fff;
+  transform: rotateY(180deg);
+}
